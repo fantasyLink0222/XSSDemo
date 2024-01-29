@@ -13,7 +13,8 @@
     if (ViewBag.Comment != null)
     {
         <div class="alert alert-success mt-3">
-            <strong>Your Feedback:</strong> @Html.Raw(ViewBag.Comment)
+            <strong>Your Feedback:</strong> @Html.Encode(ViewBag.Comment)
         </div>
     }
+
 }
